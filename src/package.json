@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.2.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.7",
+    "tailwindcss-children": "^2.1.0"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "start:css": "npx tailwindcss -i ./static/styles/tailwind/src/input.css -o ././static/styles/tailwind/dist/output.css --watch"
+  }
+}
