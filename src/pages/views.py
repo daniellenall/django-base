@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView
 
+
 class HomePageView(TemplateView):
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
