@@ -5,9 +5,19 @@ on:
     branches: [ "master", "development" ]
   pull_request:
     branches: [ "master" ]
+env:
+  DJANGO_SECRET_KEY: ${{ vars.DJANGO_SECRET_KEY }}
+  DEBUG: ${{ vars.DEBUG }}
+  DJANGO_ALLOWED_HOSTS: ${{ vars.DJANGO_ALLOWED_HOSTS }}
+  DATABASE_ENGINE: ${{ vars.DATABASE_ENGINE }}
+  DATABASE_NAME: ${{ vars.DATABASE_NAME }}
+  DATABASE_USERNAME: ${{ vars.DATABASE_USERNAME }}
+  DATABASE_PASSWORD: ${{ vars.DATABASE_PASSWORD }}
+  DATABASE_HOST: ${{ vars.DATABASE_HOST }}
+  DATABASE_PORT: ${{ vars.DATABASE_PORT }}
 
 jobs:
-
+  
   build:
 
     runs-on: ubuntu-latest
