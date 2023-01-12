@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ "master", "development"]
 
+env:
+  DJANGO_SECRET_KEY: ${{ vars.DJANGO_SECRET_KEY }}
+
 jobs:
   linting:
     name: Linting
